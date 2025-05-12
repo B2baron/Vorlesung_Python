@@ -1,0 +1,12 @@
+x = 0
+while x < 3:
+    x = x+1
+    import random
+    Wurf = random.randint(1,6)
+    print("Wurf:", Wurf)
+    if Wurf == 6:
+        x=2
+        print("Du darfst los! Würfel nochmal!")
+print("Gehe " + str(Wurf) + " Felder vor!")
+
+print("Der nächste ist dran!")
