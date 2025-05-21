@@ -1,3 +1,4 @@
+
 leiterspiel_dict = {
     0: 0,    # Startfeld
     1: 0,
@@ -101,10 +102,14 @@ leiterspiel_dict = {
     99: 0,
     100: 0   # Ziel
 }
-Feld = 0
 import random
-Wurf = random.randint(1,6)
-Feld = Feld + Wurf
-print("Ziehe auf Feld ", Feld)
-while Feld < 100:
-    
+anzahl_wuerfe = 0
+position = 0
+while position < 100:
+    anzahl_wuerfe += 1
+    wurf = random.randint(1,6)
+    print(f"Der Wurf war eine: {wurf}")
+    zwischenpos = position + wurf
+    leiterspiel_dict.get()
+
+print(f"Spiel nach {anzahl_wuerfe} zuende")
